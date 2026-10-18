@@ -42,7 +42,8 @@ Cursor 是一个……
 
 - 从 `##` 开始写，**不要写 `#`**（文章标题由页面从 `title` 渲染）。
 - 页面右侧目录从 `##` 和 `###` 提取，所以小节标题要写得能被一眼看懂。
-- 图片用 `/guides/<slug>/xx.png` 这种绝对路径，必须带 alt：`![官方下载页，红框是 Windows 入口](/guides/cursor-guide/01-下载页.png)`。
+- 图片一律下载到 `public/guides/<slug>/`，用 `/guides/<slug>/xx.png` 这种绝对路径，不要外链。
+- 每张图的 alt 里要带来源：`![官方下载页，红框是 Windows 入口（来源：官方页面）](/guides/cursor-guide/01-下载页.png)`。来源写法见任务书 5.4。
 - 代码块标语言（```bash、```powershell、```json）。
 - 表格能用，但别拿表格代替步骤说明。
 - 小节顺序按任务书第 5.2 节来。

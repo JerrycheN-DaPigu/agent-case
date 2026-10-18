@@ -15,7 +15,7 @@
 |---|---|---|
 | 1 | 工具指南页面（总览页 + 教程详情页） | `src/app/guides/` |
 | 2 | 导入脚本，把 `content/guides/*.md` 变成页面数据 | `scripts/import-guides.mjs` |
-| 3 | 5 篇教程 + 实机截图 | `content/guides/` + `public/guides/` |
+| 3 | 5 篇教程 + 配图（至少 2 张自己实机截的） | `content/guides/` + `public/guides/` |
 | 4 | 交付说明：怎么跑、做了什么取舍、为什么选这 5 个 | `DELIVERY.md` |
 
 ## 先跑起来

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" fill="#E5412D" />
+  <g
+    fill="#FFFFFF"
+    font-family="Noto Serif SC, Songti SC, SimSun, serif"
+    font-size="24"
+    font-weight="700"
+    text-anchor="middle"
+  >
+    <text x="16" y="27">天</text>
+    <text x="48" y="27">工</text>
+    <text x="16" y="59">开</text>
+    <text x="48" y="59">物</text>
+  </g>
+</svg>

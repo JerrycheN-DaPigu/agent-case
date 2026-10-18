@@ -1,7 +1,9 @@
+@import '../styles/fonts.css';
 @import '../styles/tokens.css';
 
 /* ==========================================================================
    基础样式。颜色、间距、字号只引用 tokens.css 的变量，不要在这里写死色值。
+   站内内页（工具、套餐、文章）用的是「石墨白」皮肤，所以 html 上带 data-skin="paper"。
    ========================================================================== */
 
 *,
@@ -18,10 +20,12 @@ body {
 
 html {
   /* 锚点跳转时给顶部固定栏留出位置 */
-  scroll-padding-top: 72px;
+  scroll-padding-top: 88px;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background: var(--bg);
   color: var(--fg);
@@ -76,7 +80,7 @@ img {
 }
 
 /* ==========================================================================
-   站点外壳（这一层已经写好，不需要改）
+   站点外壳：顶栏。这一层已经写好，不需要改。
    ========================================================================== */
 
 .siteHeader {
@@ -86,38 +90,174 @@ img {
   display: flex;
   align-items: center;
   gap: var(--sp-5);
-  height: 56px;
+  height: 72px;
   padding: 0 var(--wrap-pad);
   border-bottom: 1px solid var(--line);
   background: var(--bg);
 }
 
 .siteBrand {
-  font-family: var(--f-cjk);
-  font-size: var(--fs-lg);
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-3);
+  color: var(--fg);
 }
 
-.siteBrandMark {
-  color: var(--accent);
+.siteBrand:hover {
+  color: var(--fg);
+}
+
+/* 印章：和站标一致，红底白字，两行 */
+.siteSeal {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 3px 0;
+  background: var(--accent);
+  color: var(--on);
+  font-family: var(--f-cjk);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+.siteBrandName {
+  font-family: var(--f-cjk);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.siteBrandEn {
+  color: var(--mute);
+  font-family: var(--f-display);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  white-space: nowrap;
 }
 
 .siteNav {
   display: flex;
-  gap: var(--sp-4);
-  font-size: var(--fs-sm2);
+  align-items: center;
+  gap: var(--sp-6);
+  margin-left: auto;
+  font-family: var(--f-cjk);
+  font-size: var(--fs-md);
+}
+
+.siteNavItem {
+  position: relative;
+  padding: 6px 0;
   color: var(--mute);
 }
 
-.siteNav a:hover {
+.siteNavItem:hover {
   color: var(--fg);
 }
 
+.siteNavItem.isActive {
+  color: var(--fg);
+  font-weight: 700;
+}
+
+.siteNavItem.isActive::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: var(--fg);
+  content: '';
+}
+
+.siteNavItem.isDisabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.siteSearch {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  color: var(--fg);
+  opacity: 0.55;
+}
+
+/* ==========================================================================
+   版心
+   ========================================================================== */
+
 .siteMain {
+  flex: 1;
+  width: 100%;
   max-width: var(--wrap);
   margin: 0 auto;
-  padding: var(--sp-7) var(--wrap-pad) var(--sp-9);
+  padding: var(--sp-6) var(--wrap-pad) var(--sp-9);
+}
+
+/* ==========================================================================
+   页脚（深色，和站内一致）
+   ========================================================================== */
+
+.siteFooter {
+  margin-top: auto;
+  padding: var(--sp-8) var(--wrap-pad) var(--sp-6);
+  background: var(--footbg);
+  color: var(--footfg);
+}
+
+.siteFooterInner {
+  display: flex;
+  gap: var(--sp-8);
+  max-width: var(--wrap);
+  margin: 0 auto var(--sp-7);
+}
+
+.siteFooterBrand {
+  flex: 0 0 220px;
+  color: var(--footfg);
+  font-family: var(--f-display);
+  font-size: 64px;
+  font-style: italic;
+  line-height: 0.9;
+  opacity: 0.9;
+}
+
+.siteFooterCols {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--sp-6);
+  font-size: var(--fs-sm2);
+}
+
+.siteFooterCols h2 {
+  margin-bottom: var(--sp-2);
+  color: var(--footfg);
+  font-family: var(--f-body);
+  font-size: var(--fs-xs);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+
+.siteFooterCols p {
+  color: var(--footfg);
+  opacity: 0.75;
+}
+
+.siteFooterNote {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding-top: var(--sp-5);
+  border-top: 1px solid var(--foot-line);
+  font-size: var(--fs-xs);
+  opacity: 0.45;
 }
 
 /* ==========================================================================
@@ -128,11 +268,17 @@ img {
   display: flex;
   flex-direction: column;
   gap: var(--sp-4);
-  max-width: 720px;
+}
+
+.placeholderEyebrow {
+  color: var(--mute);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.06em;
 }
 
 .placeholder h1 {
-  font-size: var(--fs-3xl);
+  font-size: 56px;
+  letter-spacing: 0.02em;
 }
 
 .placeholder ul {
@@ -147,4 +293,58 @@ img {
   background: var(--tint);
   color: var(--mute);
   font-size: var(--fs-sm2);
+}
+
+.placeholderColumns {
+  display: grid;
+  gap: var(--sp-7);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .placeholderColumns {
+    grid-template-columns: 1fr;
+  }
+
+  /* 手机上放不下英文副标，照站内做法只留中文站名 */
+  .siteBrandEn {
+    display: none;
+  }
+
+  .siteBrand {
+    gap: var(--sp-2);
+  }
+
+  .siteBrandName {
+    font-size: 17px;
+  }
+
+  .siteSeal {
+    width: 30px;
+    height: 30px;
+    font-size: 9px;
+  }
+
+  .siteNav {
+    gap: var(--sp-4);
+    font-size: var(--fs-sm2);
+  }
+
+  .siteHeader {
+    gap: var(--sp-3);
+  }
+
+  .siteFooterInner {
+    flex-direction: column;
+    gap: var(--sp-6);
+  }
+
+  .siteFooterBrand {
+    flex: none;
+    font-size: 44px;
+  }
+
+  .siteFooterCols {
+    grid-template-columns: 1fr;
+  }
 }

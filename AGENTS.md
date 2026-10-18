@@ -5,13 +5,13 @@
 ## 动手前
 
 - 通读 `docs/任务书.md` 和 `docs/验收清单.md`。
-- 看 `docs/参考/` 里的参考页截图和说明。
+- 看 `docs/参考/网站现状/`（站内真实页面长什么样）和 `docs/参考/` 里的 priceai 截图（页面结构参照）。
 - 看一眼 `content/README.md`（教程格式 + 导入脚本契约）和 `data/README.md`（工具字段）。
 
 ## 硬规则
 
 1. **不要改**：`data/products/*.yaml`、`src/styles/tokens.css`、`src/lib/products.ts`、教程源文件之外的数据。`src/app/layout.tsx` 只允许加导航项。
-2. 颜色、间距、圆角只用 `tokens.css` 的变量，不写死色值；组件样式写 `*.module.css`。
+2. 颜色、间距、圆角只用 `tokens.css` 的变量，不写死色值；组件样式写 `*.module.css`。内页是 `data-skin="paper"`（浅色），不要改回深色。
 3. TypeScript `strict`，不许 `any`。
 4. 不引 Tailwind、UI 库、外部字体、外部图片、CDN。
 5. 教程正文不许硬编码进组件，必须走 `content/guides/*.md` → `pnpm import:guides` → `data/guides.json` → 页面。

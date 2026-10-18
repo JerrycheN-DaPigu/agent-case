@@ -29,6 +29,8 @@ pnpm typecheck    # 交之前必须能过
 
 Node 20.9 以上。`/guides` 现在是占位页，只证明 22 个工具的数据能读出来——把它换成真正的页面。
 
+> 启动时如果看到 `Watchpack Error ... lstat 'D:\System Volume Information'`，是 Next 的文件监听扫到了 D 盘根目录，**不影响使用，忽略即可**。
+
 ## 仓库里已经有什么
 
 | 路径 | 说明 |

@@ -1,0 +1,31 @@
+/* 仅作用于工具子页面；沿用原设计的字体、颜色、事实条、卡片与行分隔。 */
+html[data-route='tool'] .td-info .vv{font-size:14px;line-height:1.65;font-weight:600;overflow-wrap:anywhere}
+html[data-route='tool'] .td-start{grid-template-columns:1.4fr 1.25fr 1fr;border-top:0;background:var(--tint2)}
+html[data-route='tool'] .td-start .vv{font-size:13px;line-height:1.85;font-weight:400}
+html[data-route='tool'] .td-start>div:first-child{padding-left:20px}
+html[data-route='tool'] .td-version{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0;border-top:1px solid var(--line)}
+html[data-route='tool'] .td-segments{display:flex;gap:8px;flex-wrap:wrap}
+html[data-route='tool'] .td-segments button{padding:7px 14px;border:1px solid var(--line);font-size:12px}
+html[data-route='tool'] .td-segments button.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+html[data-route='tool'] .td-section{padding-top:48px}
+html[data-route='tool'] .td-models{display:grid;grid-template-columns:1.8fr 1fr;gap:56px;border-top:2px solid var(--fg);padding-top:20px}
+html[data-route='tool'] .td-models p{font-size:14px;line-height:1.95;white-space:pre-line;margin:0}
+html[data-route='tool'] .td-side{border-left:1px solid var(--line);padding-left:28px}
+html[data-route='tool'] .td-side .k{font-size:12px;color:var(--mute);margin-bottom:10px;font-family:var(--f-mono)}
+html[data-route='tool'] .td-side p{font-size:13px;color:var(--mute)}
+html[data-route='tool'] .td-source{font-size:11px;color:var(--mute);padding-top:12px;line-height:1.8}
+html[data-route='tool'] .td-plan-tools{margin-top:auto;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+html[data-route='tool'] .td-plan-tools button{font-size:12px;text-decoration:underline;text-underline-offset:4px}
+html[data-route='tool'] .td-plan-core{font-size:13px;line-height:1.9;border-top:1px solid var(--line);padding-top:12px}
+html[data-route='tool'] .td-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:2px solid var(--fg)}
+html[data-route='tool'] .td-links a{padding:18px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;font-size:14px}
+html[data-route='tool'] .td-links a:nth-child(2n){border-left:1px solid var(--line);padding-left:24px}
+html[data-route='tool'] .td-title-note{font-size:13px;color:var(--mute)}
+html[data-route='tool'] .td-price{font-size:clamp(32px,3.3vw,46px);line-height:1.1;font-weight:700;letter-spacing:-.02em}
+html[data-route='tool'] .td-price-period{font-size:12px;color:var(--mute);margin-top:4px}
+html[data-route='tool'] .td-quota{font-size:14px;line-height:1.7;border-top:1px solid var(--line);padding-top:14px;min-height:64px}
+html[data-route='tool'] .td-note{padding:16px 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--mute);line-height:1.9}
+html[data-route='tool'] .td-provider-row{display:grid;grid-template-columns:minmax(0,1fr) 110px 170px;gap:24px;align-items:center;border-bottom:1px solid var(--line);padding:20px 0}
+html[data-route='tool'] .td-provider-row p{font-size:13px;line-height:1.8;color:var(--mute);margin:6px 0 0}
+html[data-route='tool'] .td-provider-row .btn-o{text-align:center;white-space:nowrap}
+@media(max-width:900px){html[data-route='tool'] .td-start{grid-template-columns:1fr}html[data-route='tool'] .td-start>div{padding:15px 16px}html[data-route='tool'] .td-start>div:first-child{padding-left:16px}html[data-route='tool'] .td-models{grid-template-columns:1fr;gap:22px}html[data-route='tool'] .td-side{border-left:0;border-top:1px solid var(--line);padding:20px 0 0}html[data-route='tool'] .td-version{align-items:flex-start;flex-direction:column;gap:10px}html[data-route='tool'] .td-provider-row{grid-template-columns:minmax(0,1fr) auto;gap:12px}html[data-route='tool'] .td-provider-row .btn-o{grid-column:1/-1;justify-self:start}html[data-route='tool'] .td-links{grid-template-columns:1fr}html[data-route='tool'] .td-links a:nth-child(2n){border-left:0;padding-left:0}html[data-route='tool'] .td-section{padding-top:36px}}

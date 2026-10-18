@@ -11,7 +11,9 @@
 
 ## 先看一眼我们的网站
 
-**双击 `reference-site/index.html`**，用浏览器打开就能看站内真实页面（工具列表、工具详情、文章列表），不用装任何东西。看完再回来做页面。
+**双击 `design-demo/index.html`**，用 Chrome 或 Edge 打开。这是完整的可交互设计 demo：首页、模型榜、工具筛选、比赛赛程、搜索、三种皮肤切换，全部能点，断网也能用。
+
+要写页面、要看实现，用的是根目录这个 Next.js 项目，不是 demo 里的那套单文件代码。
 
 ## 你要交的四样东西
 
@@ -43,11 +45,10 @@ Node 20.9 以上。`/guides` 现在是占位页，只证明 22 个工具的数�
 | `src/lib/products.ts` | 读工具数据的现成函数（`listProducts` / `groupProducts` / `getProduct`），已经验证过 22 个文件都能解析 |
 | `src/lib/guides.ts` | 教程数据的类型和读取函数，读的是 `data/guides.json`（现在还是空数组） |
 | `src/styles/tokens.css` | 设计令牌。颜色、间距、圆角只能用这里的变量 |
-| `reference-site/` | **站内真实页面的静态快照**，双击 `index.html` 看 |
+| `design-demo/` | **完整设计 demo**（可交互），双击 `index.html` 看 |
 | `src/app/layout.tsx` | 站点外壳（顶栏 + 页脚），已经和站内一致，不要重做 |
 | `public/icons/brands/` | 工具 logo（22 个工具里 21 个有图标，LibTV 没有） |
-| `docs/参考/网站现状/` | **站内真实页面的截图**（首页、工具列表、工具详情、套餐、文章、手机端）。开工前先看一眼 |
-| `docs/参考/` | priceai 参考页的截图 + 该学什么、别学什么 |
+| `docs/参考/` | priceai 参考页的截图（三栏结构）+ 该学什么、别学什么 |
 | `content/README.md` | 教程文件格式和导入脚本的契约，**动手前先读** |
 
 ## 往下读

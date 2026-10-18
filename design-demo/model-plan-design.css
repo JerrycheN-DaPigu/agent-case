@@ -1,0 +1,185 @@
+/* 模型详情 / 套餐页 / 工具详情改版共用（2026-10-12）。沿用原有变量与线分隔；强调色只给主按钮。 */
+.kx-scope{display:inline-block;font-size:12px;line-height:1.5;padding:1px 8px;border:1px solid var(--fg);white-space:nowrap;font-weight:600}
+.kx-scope-tool{background:var(--tint);border-color:var(--line)}
+.kx-demo{font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;color:var(--mute);border:1px dashed var(--mute);padding:1px 7px;white-space:nowrap}
+.kx-lead{font-size:14px;line-height:1.8;color:var(--mute);margin:0 0 8px;max-width:860px}
+.kx-src{font-size:12px;color:var(--mute);line-height:1.8;padding-top:12px}
+.kx-k{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--mute);margin-bottom:6px}
+.kx-p{font-size:15px;line-height:1.85;margin:0 0 18px}
+.kx-ul{margin:0 0 18px;padding:0;list-style:none}
+.kx-ul li{position:relative;padding-left:16px;font-size:14px;line-height:1.85}
+.kx-ul li::before{content:"";position:absolute;left:2px;top:.8em;width:5px;height:5px;background:var(--fg)}
+.kx-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+
+/* 页头 Arena 一行 */
+.kx-arena{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:12px 0;border-top:1px solid var(--line);font-size:13px}
+.kx-arena .k{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--mute)}
+.kx-arena b{font-size:18px}
+
+/* 介绍卡 */
+.kx-intro{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(320px,1fr);border-top:2px solid var(--fg);border-bottom:1px solid var(--line)}
+.kx-intro-main{padding:24px 40px 6px 0;border-right:1px solid var(--line)}
+.kx-intro-rec{padding:24px 28px 24px 32px;display:flex;flex-direction:column;gap:12px;background:var(--tint2)}
+.kx-intro-rec .kx-p{margin:0;font-size:14px}
+.kx-intro-rec .btn{align-self:flex-start;margin-top:auto}
+.kx-rec-name{font-size:22px;font-weight:800}
+.kx-rec-name .mute{font-weight:600;font-size:16px}
+.kx-rec-scope{display:flex;align-items:center;gap:10px;font-size:13px;flex-wrap:wrap}
+.kx-rec-price{display:flex;align-items:baseline;gap:10px}
+.kx-rec-price .big-p{font-size:40px}
+.kx-intro .kx-mrec{display:grid;gap:0;border-top:1px solid var(--line)}
+.kx-mrec a{display:grid;grid-template-columns:36px minmax(0,1fr) 16px;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);transition:background .2s}
+.kx-mrec a:hover{background:var(--tint)}
+.kx-mrec b{display:block;font-size:15px}
+.kx-mrec span.mute{display:block;font-size:12.5px;line-height:1.6}
+
+/* 福利横栏 */
+.kx-dealbar{display:flex;align-items:stretch;gap:0;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:thin}
+.kx-dl{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--mute);padding:14px 18px 14px 0;display:flex;align-items:center;flex:none}
+.kx-dealbar a{display:flex;align-items:baseline;gap:12px;padding:14px 22px;border-left:1px solid var(--line);white-space:nowrap;font-size:14px;transition:background .2s}
+.kx-dealbar a:hover{background:var(--tint)}
+.kx-dealbar a .mute{font-size:13px}
+.kx-when{font-family:var(--f-mono);font-size:11px;border:1px solid var(--line);padding:0 6px}
+.kx-go{color:var(--mute)}
+
+/* 怎么用上它 */
+.kx-group{padding-top:28px}
+.kx-gh{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding-bottom:6px}
+.kx-gh h3{margin:0;font-size:19px;font-weight:800}
+.kx-gh .mute{font-size:13px}
+.kx-group .fbar{border-top:2px solid var(--fg)}
+.kx-ph,.kx-pl{display:grid;grid-template-columns:minmax(220px,1.1fr) minmax(0,1.6fr) 190px 84px;gap:24px;align-items:center}
+.kx-ph{padding:10px 0;border-bottom:1px solid var(--line);font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--mute)}
+.kx-prow{border-bottom:1px solid var(--line)}
+.kx-pl{padding:16px 0}
+.kx-pname{display:flex;align-items:center;gap:14px;min-width:0}
+.kx-pname b{display:block;font-size:16px}
+.kx-pname span.mute{display:block;font-size:13px}
+.kx-pname:hover b{text-decoration:underline;text-underline-offset:4px}
+.kx-note{font-size:13px;color:var(--mute);line-height:1.6;margin-top:6px}
+.kx-from{font-size:13px}
+.kx-from .mono{font-size:20px;font-weight:600}
+.kx-from .mute{font-size:12px;margin-top:2px}
+.kx-tg{justify-self:end;font-size:13px;display:flex;gap:8px;align-items:center;color:var(--mute)}
+.kx-tg span{font-size:18px;color:var(--fg)}
+.kx-tg:hover{color:var(--fg)}
+.kx-tiers{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:0;margin:0 0 18px 50px;border-left:2px solid var(--fg);align-items:stretch}
+.kx-tiers>div{padding:6px 20px;display:flex;flex-direction:column;gap:3px;border-right:1px solid var(--line);font-size:13px}
+.kx-tiers b{font-size:18px}
+.kx-tiers small{font-size:11px;color:var(--mute);font-weight:400}
+.kx-tiers .btn-o{align-self:center;justify-self:start;margin-left:20px;font-size:13px;padding:8px 16px}
+.kx-empty{padding:28px 0;border-bottom:1px solid var(--line)}
+.kx-api{display:grid;grid-template-columns:minmax(200px,1.2fr) minmax(0,1.2fr) 110px 110px 150px 60px;gap:20px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);font-size:14px}
+.kx-api-h{border-top:2px solid var(--fg);padding:10px 0;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--mute)}
+.kx-api .mono{font-size:14px}
+.kx-api .kx-ch{display:flex;align-items:center;gap:12px}
+
+/* 同家族 */
+.kx-fam{display:grid;grid-template-columns:minmax(200px,.8fr) minmax(0,1.8fr) 280px;gap:24px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line);font-size:14px}
+.kx-fam-h{border-top:2px solid var(--fg);padding:10px 0;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--mute)}
+a.kx-fam{transition:background .2s}
+a.kx-fam:hover{background:var(--tint)}
+a.kx-fam.self{background:var(--tint2)}
+.kx-fam b{font-size:15px}
+
+/* 套餐页 */
+.kx-hr{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.kx-scoperow{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:14px 0;border-top:2px solid var(--fg);border-bottom:1px solid var(--line);font-size:14px}
+.kx-sr-k{margin-left:auto;font-size:12px}
+.kx-seg{display:inline-flex;border:1px solid var(--line);padding:4px;gap:4px;margin-bottom:24px;background:var(--tint2)}
+.kx-seg button{padding:9px 26px;font-size:14px;color:var(--mute);transition:background .2s,color .2s}
+.kx-seg button:hover{color:var(--fg)}
+.kx-seg button.on{background:var(--fg);color:var(--bg);font-weight:700}
+.kx-tiers-row{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));border-top:2px solid var(--fg);border-bottom:1px solid var(--line)}
+.kx-tier{padding:24px 22px 22px;border-right:1px solid var(--line);display:flex;flex-direction:column;min-width:0}
+.kx-tier:first-child{padding-left:0}
+.kx-tier:last-child{border-right:0;padding-right:0}
+.kx-tn{font-size:14px;letter-spacing:.02em}
+.kx-tn .mute{font-size:12px}
+.kx-price{margin-top:10px;min-height:48px;display:flex;align-items:flex-end}
+.kx-price .big-p{font-size:clamp(34px,3vw,44px)}
+.kx-ptext{font-family:var(--f-mono);font-size:24px;font-weight:600;line-height:1.2}
+.kx-na{font-size:15px;color:var(--mute);line-height:1.2}
+.kx-tier.off .kx-tn,.kx-tier.off .kx-q,.kx-tier.off .kx-ul,.kx-tier.off .kx-tl{opacity:.55}
+.kx-pm{font-size:12px;color:var(--mute);margin-top:6px;min-height:18px}
+.kx-tl{font-size:13px;color:var(--mute);margin-top:6px}
+.kx-q{font-size:15px;font-weight:700;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin:14px 0}
+.kx-tier .kx-ul{flex:1}
+.kx-mc{display:flex;flex-wrap:wrap;gap:6px}
+.kx-mchip{padding:3px 9px!important;font-size:12px!important;gap:6px!important}
+.kx-foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px;color:var(--mute);padding-top:12px;line-height:1.8}
+.kx-foot a{text-decoration:underline;text-underline-offset:3px}
+
+/* 工具页：页头标签、怎么用上它、同类工具 */
+.kx-badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;align-items:center}
+.kx-badges .pill-s{font-size:12px}
+.kx-badge-off{border-style:dashed!important}
+.kx-diff{font-family:var(--f-mono);letter-spacing:.1em}
+.kx-how{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);border-top:2px solid var(--fg);border-bottom:1px solid var(--line)}
+.kx-how>div{padding:20px 24px;border-right:1px solid var(--line)}
+.kx-how>div:first-child{padding-left:0}
+.kx-how>div:last-child{border-right:0}
+.kx-how .n{font-family:var(--f-mono);font-size:12px;color:var(--mute)}
+.kx-how b{display:block;font-size:16px;margin-top:6px}
+.kx-how p{font-size:13px;color:var(--mute);line-height:1.7;margin:6px 0 0}
+.kx-sim{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));border-top:2px solid var(--fg)}
+.kx-sim a{padding:18px 20px 18px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px;transition:background .2s}
+.kx-sim a:hover{background:var(--tint)}
+.kx-sim b{font-size:16px}
+.kx-sim span{font-size:13px;color:var(--mute)}
+.kx-crow{display:grid;grid-template-columns:minmax(220px,1.1fr) minmax(0,1.6fr) 150px 140px;gap:24px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.kx-off>*:not(.td-plan-tools){opacity:.55}
+.kx-crow b{font-size:16px;display:block}
+.kx-crow .mono{font-size:16px;font-weight:600}
+
+@media (max-width:1100px){
+  .kx-api{grid-template-columns:minmax(160px,1fr) minmax(0,1fr) 90px 90px 120px 44px;gap:14px}
+}
+@media (max-width:900px){
+  .kx-intro{grid-template-columns:1fr}
+  .kx-intro-main{padding-right:0;border-right:0}
+  .kx-intro-rec{padding:20px 16px}
+  .kx-ph{display:none}
+  .kx-pl{grid-template-columns:minmax(0,1fr) auto;gap:10px 12px}
+  .kx-pl>div:nth-child(2){grid-column:1/-1;grid-row:2}
+  .kx-tiers{margin-left:0}
+  .kx-api-h{display:none}
+  .kx-api{grid-template-columns:1fr 1fr;gap:6px 12px}
+  .kx-fam{grid-template-columns:1fr;gap:4px}
+  .kx-fam-h{display:none}
+  .kx-tiers-row{grid-template-columns:1fr}
+  .kx-tier{padding:22px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .kx-seg{display:flex;overflow-x:auto}
+  .kx-seg button{padding:9px 14px;white-space:nowrap}
+  .kx-how{grid-template-columns:1fr}
+  .kx-how>div{padding:16px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .kx-crow{grid-template-columns:minmax(0,1fr) auto;gap:8px 12px}
+  .kx-crow>*:nth-child(2){grid-column:1/-1}
+}
+
+/* 第二版（10-12 用户意见）：套餐点评、版本切换、精简事实条、使用教程链接 */
+.kx-review{display:grid;grid-template-columns:140px minmax(0,1fr);gap:28px;border-top:2px solid var(--fg);border-bottom:1px solid var(--line);padding:20px 0 4px}
+.kx-rv-l{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.kx-verdict{font-size:15px;font-weight:800;border:1px solid var(--fg);padding:3px 12px}
+.kx-rv-h{font-size:19px;font-weight:800;margin-bottom:8px}
+.kx-review .kx-p{max-width:900px;font-size:14px}
+.kx-ver{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.kx-ver .kx-k{margin:0}
+.kx-seg-lg{margin:0}
+.kx-seg-lg button{padding:11px 30px;font-size:15px}
+.kx-h1v{font-size:.42em;font-weight:700;color:var(--mute);vertical-align:middle;margin-left:6px}
+.info.kx-info5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.kx-guide{display:flex;align-items:baseline;gap:14px;padding:14px 0 18px;border-top:1px solid var(--line);font-size:14px;font-weight:600}
+.kx-guide a{text-decoration:underline;text-underline-offset:4px}
+@media (max-width:900px){
+  .kx-review{grid-template-columns:1fr;gap:10px}
+  .kx-ver{align-items:flex-start}
+  .info.kx-info5{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+.kx-crow .btn-o{white-space:nowrap;text-align:center}
+
+/* 10-13：模型介绍卡单段简介；点评署名 */
+.kx-intro.kx-intro1{display:block;padding:20px 0 6px}
+.kx-intro1 .kx-p{max-width:980px;font-size:16px}
+.kx-rv-by{font-size:12px;color:var(--mute);line-height:1.7}
+.kx-mrec a b{font-size:15px}

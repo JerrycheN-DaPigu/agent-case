@@ -19,7 +19,9 @@
 | `accessCN` | boolean | **官方**是否在中国大陆可用。注意：`false` 不等于「完全用不了」，见 `accessNote` |
 | `accessNote` | string | 可用性说明，例如「官方国内不可用」 |
 | `freeTier` | string | 免费档说明。注意有些写的是「有免费版（Hobby）」，有些写的是额度，别当成统一口径 |
-| `logoUrl` | string \| null | 图标路径，指向 `public/icons/brands/`。少数工具是空的 |
+| `logoUrl` | string \| null | 图标路径，指向 `public/icons/brands/`。**LibTV 是 null**，页面要给个兜底（首字母或色块），不要留破图 |
+
+> 有四个工具共用别家的图标（千问办公和 Qoder 用 `qwen.svg`、WorkBuddy 用 `codebuddy.svg`、小云雀用 `doubao.svg`、ZCode 用 `zhipu.svg`），这是数据本身的样子，照用就行。
 | `sourceUrls` | string[] | 这些字段的依据链接 |
 | `verifiedAt` | string | 核对日期 |
 

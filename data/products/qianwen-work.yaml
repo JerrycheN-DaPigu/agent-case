@@ -1,0 +1,42 @@
+# 工具 · 千问办公（alibaba）
+# 初稿「对应会员」一栏（只作文档参考，不进库）：
+#   百炼 Token Plan（与 Qoder、Qwen Code 通用）
+# T53：官网改成**千问办公**自己的入口 qwenwork.cn。原来的 qianwen.com 是通用千问助手
+#   （另一个产品）的入口，两者的会员与功能不能混用 —— 依据阿里云官方文档
+#   help.aliyun.com/zh/qwenwork/qwenwork-intro（见「内容补齐-3-外部调研结果」任务一）。
+# T101（2026-10-12）：按飞书快照 2026-10-11 重研结果更新 —— 形态、一句话介绍、免费档、
+#   国内可用性口径与来源。免费档改成快照口径（定价页标为限时权益）；
+#   priceNote 保留 2026-10-08 的官方定价页数据（重研没重取价格）。
+name: 千问办公
+vendor: alibaba
+category: agent
+form: 网页 + 桌面应用
+tagline: 通过任务对话完成资料分析、文档、表格、PPT 和网页制作，并直接交付可继续使用的成果。
+intro: 千问办公是阿里的办公智能体，提供网页和 Windows、macOS 等桌面客户端，可围绕资料研究、数据分析及文件处理交付可编辑的办公成果。它可使用阿里自家的 Qwen3.8 Max 等模型；国内用户可用大陆手机号或钉钉扫码登录，个人端可切换模型档位。
+website: https://qwenwork.cn
+openSource: false
+accessCN: true
+accessNote: 国内可用
+# T56：官方定价页 qwenwork.cn/pricing 的产品窗口读取结果（2026-10-08）
+# T113（2026-10-13）：用户口径 —— 免费状态的额度一律不写。原来的注册赠积分、每日赠积分与
+#   云盘 / 网页 / 并行数一并撤下，freeTier 只留一句定性说明（撤下的活动见交付报告）。
+freeTier: 有免费版，登录即可使用；更多额度需订阅付费版
+priceNote: 标准版 ¥98/月（连续包月 8 折 ¥78/月，每月 2,000 积分）；高级版 ¥198/月（8 折 ¥158/月，每月 4,000 积分）；年付 7 折
+logoUrl: /icons/brands/qwen.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://help.aliyun.com/zh/qwenwork/qwenwork-intro
+  - https://qwenwork.cn/download
+  - https://qwenwork.cn/docs/getting-started/basic-workflow
+  - https://qwenwork.cn/docs/desktop/model-selection
+  - https://qwenwork.cn/pricing
+  - https://qwenwork.cn
+  - https://docs.qwenwork.cn/desktop/model-selection
+verifiedAt: 2026-10-11
+# T89：开始条件按 T89 事实卡转写（只用 primary 版本）
+signup: 绑定中国大陆手机号注册，可用钉钉扫码
+overseasPhone: no
+realName: unspecified
+regionNote: 国内版域名为 qwenwork.cn
+startFactsSourceUrl: https://qwenwork.cn/docs/getting-started/basic-workflow
+startFactsVerifiedAt: 2026-10-10

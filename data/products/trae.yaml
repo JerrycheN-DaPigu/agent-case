@@ -1,0 +1,53 @@
+# 工具 · TRAE（bytedance）
+# 初稿「对应会员」一栏（只作文档参考，不进库）：
+#   Trae 会员（国内 Lite / Pro / Pro+ / Ultra，国际 Pro / Pro+ / Ultra）；GLM、方舟 Coding Plan
+# T101（2026-10-12）：按飞书快照 2026-10-11 重研结果更新 —— 名称、形态、一句话介绍、
+#   免费档、国内可用性口径与来源。国内版为主字段；国际版的差异写进 accessNote 与
+#   freeTier 的分句（快照：两版价格、用量和模型权限分别记录、不互套）。
+# T112（2026-10-13）：补 editions 两版（国内版 / 国际版），工具页才出现版本切换；
+#   免费档按 2026-10-13 口径只写定性说明，不写积分数、次数、天数。
+name: TRAE
+vendor: bytedance
+category: coding
+form: 独立 IDE + 桌面应用 + 网页 + 移动 App + VS Code 插件 + JetBrains 插件 + CLI
+tagline: 融合 Agent 任务工作台和 IDE 的 AI 开发工具，可完成项目理解、代码修改、命令执行和结果验证。
+intro: TRAE 是字节跳动的 AI 开发工具，国内新版整合 Agent 与 IDE 模式，可拆解需求、修改代码、执行命令，并在桌面、网页和移动端跟进任务。它自带套餐国内版分 Lite、Pro、Pro+、Ultra 四档，按每月积分计量，只在调用 TRAE 内置模型时消耗；国际版按用量档位另设。
+website: https://www.trae.cn
+openSource: false
+accessCN: true
+accessNote: 国内可用；国际版网络限制，需代理
+freeTier: 有免费版，可免费登录使用
+# 快照【官网与下载入口】：中国版官网 https://www.trae.cn/ ，全球官网 https://www.trae.ai/
+# 国际版的免费档在快照【免费与试用】里没有依据（只写了国内版），这里留空，见交付报告
+editions:
+  - edition: cn
+    label: 国内版
+    website: https://www.trae.cn
+    accessLabel: 国内可用
+    freeTier: 有免费版，可免费登录使用
+  - edition: global
+    label: 国际版
+    website: https://www.trae.ai
+    accessLabel: 国际版网络限制，需代理
+logoUrl: /icons/brands/trae.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://docs.trae.cn/ide_traework-to-traecode-data-migration
+  - https://developer.volcengine.com/articles/7516755904457343002
+  - https://www.trae.cn/enterprise
+  - https://docs.trae.cn/plugin_what-is-trae-plugin
+  - https://docs.trae.cn/cli_get-started-with-trae-code-cli-2
+  - https://docs.trae.cn/ide_get-started-with-trae
+  - https://www.trae.cn/download
+  - https://www.trae.ai
+  - https://docs.trae.cn/ide_models
+  - https://docs.trae.cn/enterprise_model-settings-for-trae-enterprise
+  - https://docs.trae.cn/ide_plans-and-billing
+  - https://www.trae.cn
+  - https://docs.trae.cn/work_traework-to-traecode-data-migration
+verifiedAt: 2026-10-11
+# T89：开始条件按 T89 事实卡转写（只用 primary=cn 版本）
+# 注册方式、海外手机号、实名三行在卡里没有可用的官方依据（单一来源 / 官方页没查全），按映射规则留空，见交付报告
+regionNote: 国内版为 TRAE CN（trae.cn）
+startFactsSourceUrl: https://docs.trae.cn/
+startFactsVerifiedAt: 2026-10-10

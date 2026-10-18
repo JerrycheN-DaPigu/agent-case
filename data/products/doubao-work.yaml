@@ -1,0 +1,39 @@
+# 工具 · 豆包工作（bytedance）
+# 初稿「对应会员」一栏（只作文档参考，不进库）：
+#   豆包专业版（标准 / 加强 / 高级）
+# T53：一句话简介只概括**豆包官方桌面端页面**已说明的能力（doubao.com/download/desktop）；
+#   「豆包工作」是不是独立产品 / 是不是豆包里的办公模式、跨端范围有多大，官方没有明说，
+#   本次不猜（见「内容补齐-3-外部调研结果」任务一的产品身份备注）。
+# T57：付费档按官方定价页 doubao.com/work/pricing 填（取数 2026-10-08，产品窗口 2026-10-08 核对）：
+#   用**连续包月**的价（与 plans/doubao-*.yaml 的 ¥68 / ¥200 / ¥500 一致），
+#   单月价、年卡与每 7 天的额度一起写在 priceNote 里。
+# T101（2026-10-12）：按飞书快照 2026-10-11 重研结果更新 —— 形态、一句话介绍、官网入口、
+#   免费档、国内可用性口径与来源。免费档改成快照里的官方介绍页口径（登录即享 30 天免费会员），
+#   旧的「免费版长期免费 ¥0」在 2026-10-11 的重研里没有再被证实，不再写。
+# T113（2026-10-13）：用户口径 —— 「送 N 天会员」是赠送付费会员的活动，不是免费档。
+#   freeTier 只留一句定性说明，「登录即享 30 天免费会员」撤下（列进交付报告，供以后做成福利条目）。
+name: 豆包工作
+vendor: bytedance
+category: agent
+form: 桌面应用 + 网页
+tagline: 围绕工作目标自动规划、搜索和调用工具，交付文档、表格、PPT、网页或应用，并接入飞书协作。
+intro: 豆包工作是字节跳动豆包品牌的智能体平台，提供独立电脑客户端，并在豆包和飞书中设置工作入口，可完成研究、数据分析及文档、表格、演示和网页制作。它按任务调度字节自家的 Doubao-Seed 2.1 Pro 等模型，并通过技能和连接器扩展工作流程。
+website: https://www.doubao.com/work
+openSource: false
+accessCN: true
+accessNote: 国内可用
+freeTier: 有免费版，登录即可使用；会员功能需订阅
+priceNote: 连续包月标准版 ¥68/月（单月 ¥80，年卡 ¥688，每 7 天 2,100 额度）、加强版 ¥200/月（单月 ¥240，每 7 天 5,600）、高级版 ¥500/月（单月 ¥599，每 7 天 14,000）；三档都含免费版全部权益
+logoUrl: /icons/brands/doubao.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://www.doubao.com/work
+  - https://www.doubao.com/work/pricing
+  - https://www.doubao.com
+verifiedAt: 2026-10-11
+# T89：开始条件按 T89 事实卡转写（只用 primary 版本）
+signup: 手机号、邮箱、运营商一键、Apple ID 或抖音账号注册
+overseasPhone: unspecified
+regionNote: 有国内版，由北京春田知韵运营
+startFactsSourceUrl: https://www.doubao.com/legal/privacy
+startFactsVerifiedAt: 2026-10-10

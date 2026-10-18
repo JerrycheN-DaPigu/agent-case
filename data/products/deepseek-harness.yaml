@@ -1,0 +1,35 @@
+# DeepSeek Harness · T41 官方复核；未确认字段见调研报告
+# T101（2026-10-12）：按飞书快照 2026-10-11 重研结果更新 —— 形态、一句话介绍、免费档、
+#   国内可用性口径与来源；openSource、官网、图标不动。
+name: DeepSeek Harness
+vendor: deepseek
+category: coding
+form: 桌面应用 + 网页 + CLI
+tagline: DeepSeek 开源智能体框架，通过插件扩展能力，可处理项目编码、文档、数据和后台任务。
+intro: DeepSeek Harness 是深度求索开源的智能体框架与桌面工具，用插件组合模型、工具、会话和任务执行能力，也可通过命令启动本地网页。它可使用 DeepSeek 自家的 V4 Pro、V4.1 Flash 等模型，也支持第三方服务与自定义接口，官方称全球开放测试。
+website: https://www.deepseek.com/harness
+repoUrl: https://github.com/deepseek-ai/deepseek-harness
+openSource: true
+accessCN: true
+accessNote: 国内可用
+freeTier: 工具公开预览并开源（MIT 许可）；云端模型调用按所接服务计费
+logoUrl: /icons/brands/deepseek-harness.svg
+logoSourceUrl: https://www.deepseek.com/harness/favicon.svg
+sourceUrls:
+  - https://www.deepseek.com/en/harness
+  - https://github.com/deepseek-ai/deepseek-harness
+  - https://github.com/deepseek-ai/deepseek-harness/blob/master/apps/cli/README.md
+  - https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/guide/index.md
+  - https://github.com/deepseek-ai/deepseek-harness/blob/master/apps/desktop/README.md
+  - https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/guide/providers.md
+  - https://api-docs.deepseek.com/quick_start/pricing
+  - https://www.deepseek.com/harness
+  - https://www.deepseek.com/harness/
+verifiedAt: 2026-10-11
+# T89：开始条件按 T89 事实卡转写（只用 primary 版本）
+signup: 手机号注册 DeepSeek 账号；自定义模型免注册
+overseasPhone: unspecified
+realName: yes
+regionNote: 国内版由杭州深度求索推出，主要面向国内用户
+startFactsSourceUrl: https://www.deepseek.com/harness/privacy/
+startFactsVerifiedAt: 2026-10-10

@@ -1,0 +1,46 @@
+# 工具 · 可灵AI（kuaishou）
+# 初稿「对应会员」一栏（只作文档参考，不进库）：
+#   可灵会员（暂不整理）
+# T57：免费档与会员起步价按国内站会员页 klingai.com/app/membership/membership-plan 填
+#   （取数 2026-10-08，产品窗口 2026-10-08 核对；页面为中文、人民币计价）。三条口径：
+#   1. 非会员 ¥0 免费用，每月登录领免费灵感值，**数值官方未写**（权益对比表里那一行是「-」），
+#      有效期 31 天（FAQ Q5 官方原话）；
+#   2. 起步价用**黄金会员连续包月 ¥58/月**（页面标 87 折）；首购首月 ¥46、年付 ¥554/年 也照官方写；
+#   3. 调研里「单月原价 ¥66」是**用年付原价 ÷ 12 推算**的，页面没有直接写 → **不入库**。
+# T101（2026-10-12）：按飞书快照 2026-10-11 重研结果更新 —— 名称、形态、一句话介绍、
+#   国内可用性口径与来源。2026-10-11 重研时未登录看不到当前免费额度，freeTier / priceNote
+#   保留原值（见欠缺清单）。
+# T113（2026-10-13）：用户口径 —— 免费状态的额度（每月登录领免费灵感值）一律不写，
+#   freeTier 只留一句定性说明；上面 T57 记的免费灵感值已从 freeTier 撤下（见交付报告）。
+name: 可灵AI（Kling AI）
+vendor: kuaishou
+category: image-video
+form: 网页 + 桌面应用 + 移动 App + CLI
+tagline: 通过文字、图片及参考素材生成和编辑视频、图像，并用画布与 Agent 组织创作流程。
+intro: 可灵AI是快手的图像与视频创作产品，提供网页及独立 iPhone、iPad App，支持文生视频、图生视频、原生音频和参考素材编辑。它使用快手自家的可灵 V3 Pro、可灵 2.6 Pro 等视频模型；会员和灵感值决定使用权益，中国区 iOS 应用支持内购。
+website: https://klingai.com
+openSource: false
+accessCN: true
+accessNote: 国内可用
+freeTier: 有免费版，登录即可使用；会员功能需订阅可灵会员
+priceNote: 黄金会员连续包月 ¥58/月（87 折，660 灵感值/月；首购首月 ¥46，年付 ¥554/年）
+logoUrl: /icons/brands/kling.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://klingai.com/docs/user-policy
+  - https://kling.ai
+  - https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/keling30xiliemoxingquanmianshangxian
+  - https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukelingaituichuduotucankaogongneng
+  - https://kling.ai/docs/user-policy
+  - https://kling.ai/quickstart
+  - https://klingai.com/docs/payment-policy
+  - https://kling.ai/docs/payment-policy
+  - https://klingai.com
+  - https://klingai.com/app/membership/membership-plan
+  - https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/keling30xiliemoxingquanmianshangxian/
+verifiedAt: 2026-10-11
+# T89：开始条件按 T89 事实卡转写（只用 primary=cn 版本）
+signup: 手机号或快手账号注册
+regionNote: 国内版为可灵AI（klingai.com）
+startFactsSourceUrl: https://klingai.com/docs/privacy-policy
+startFactsVerifiedAt: 2026-10-10

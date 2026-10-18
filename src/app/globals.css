@@ -1,0 +1,150 @@
+@import '../styles/tokens.css';
+
+/* ==========================================================================
+   基础样式。颜色、间距、字号只引用 tokens.css 的变量，不要在这里写死色值。
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 锚点跳转时给顶部固定栏留出位置 */
+  scroll-padding-top: 72px;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--f-body);
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--f-cjk);
+  font-weight: 700;
+  line-height: var(--lh-snug);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+code,
+pre {
+  font-family: var(--f-mono);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--on);
+}
+
+/* ==========================================================================
+   站点外壳（这一层已经写好，不需要改）
+   ========================================================================== */
+
+.siteHeader {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-nav);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+  height: 56px;
+  padding: 0 var(--wrap-pad);
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.siteBrand {
+  font-family: var(--f-cjk);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.siteBrandMark {
+  color: var(--accent);
+}
+
+.siteNav {
+  display: flex;
+  gap: var(--sp-4);
+  font-size: var(--fs-sm2);
+  color: var(--mute);
+}
+
+.siteNav a:hover {
+  color: var(--fg);
+}
+
+.siteMain {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: var(--sp-7) var(--wrap-pad) var(--sp-9);
+}
+
+/* ==========================================================================
+   占位页样式：实现正式页面后可以删掉
+   ========================================================================== */
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  max-width: 720px;
+}
+
+.placeholder h1 {
+  font-size: var(--fs-3xl);
+}
+
+.placeholder ul {
+  margin: 0;
+  padding-left: var(--sp-5);
+  color: var(--mute);
+}
+
+.placeholderNotice {
+  padding: var(--sp-4) var(--sp-5);
+  border: 1px solid var(--line);
+  background: var(--tint);
+  color: var(--mute);
+  font-size: var(--fs-sm2);
+}

@@ -1,0 +1,36 @@
+# 工具 · OpenCode（anomaly）
+# 初稿「对应会员」一栏（只作文档参考，不进库）：
+#   OpenCode Go / Zen；GLM Coding Plan、方舟 Coding Plan、Kimi 会员
+# T101（2026-10-12）：按飞书快照 2026-10-11 重研结果更新 —— 名称、形态、一句话介绍、
+#   免费档、国内可用性口径与来源；openSource、官网、图标不动。
+name: OpenCode
+vendor: anomaly
+category: coding
+form: CLI + 桌面应用 + 网页 + VS Code 插件
+tagline: 开源编程智能体，可在终端、桌面、Web 和编辑器集成中帮助修改项目代码。
+intro: OpenCode 是 Anomaly 推出的开源 AI 编程代理，提供终端、桌面端、网页及编辑器入口，能在项目中读写代码、运行命令并连接工具。可选订阅 OpenCode Go 按模型分别给月度美元用量限额，含 Kimi K3、GLM-5.3、MiniMax M3 等模型，额度用尽可继续用免费模型。
+website: https://opencode.ai
+repoUrl: https://github.com/anomalyco/opencode
+openSource: true
+accessCN: true
+accessNote: 国内可用
+freeTier: 工具开源，官网提供部分免费模型；可连接自有供应商服务或本地模型，OpenCode Go 是可选订阅
+logoUrl: /icons/brands/opencode.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://opencode.ai/v2/docs
+  - https://opencode.ai
+  - https://opencode.ai/docs/ide
+  - https://opencode.ai/download
+  - https://opencode.ai/v2/docs/providers
+  - https://opencode.ai/docs/go
+  - https://opencode.ai/zen
+  - https://opencode.ai/docs/models/
+  - https://opencode.ai/v2/docs/console/go/
+verifiedAt: 2026-10-11
+# T89：开始条件按 T89 事实卡转写（只用 primary 版本）
+# 海外手机号、实名两行在卡里没有可用的官方依据（官方协议 / 隐私政策没查过），按映射规则留空，见交付报告
+signup: 在官网 opencode.ai 创建账户
+regionNote: 国内可直接使用官方 API 与桌面端
+startFactsSourceUrl: https://opencode.ai/go
+startFactsVerifiedAt: 2026-10-10

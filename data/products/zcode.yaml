@@ -1,0 +1,23 @@
+# 工具 · ZCode（zhipu）
+# T101（2026-10-12）新增：按飞书快照 2026-10-11 本条为「新增」。
+# 形态只写安装文档明确取得的桌面端；安全中心泛称的 CLI / IDE 插件没有面向用户的安装入口，
+# 不据此扩展形态。官网入口把快照里的 `/en` 去掉，用中文默认版。
+name: ZCode
+vendor: zhipu
+category: coding
+form: 桌面应用
+tagline: 智谱编程智能体工作台，可通过多个智能体完成复杂开发任务。
+intro: ZCode 是智谱推出的 AI 编程桌面应用，提供 Windows、macOS 和 Linux 版本，支持长任务目标、多代理协作与浏览器操作。它可使用智谱的旗舰模型 GLM-5.3 等；国内接入 BigModel、海外接入 Z.ai，手机可通过微信或 Telegram 远程控制桌面任务。
+website: https://zcode.z.ai
+openSource: false
+accessCN: true
+accessNote: 国内可用
+freeTier: 无免费版：连接 BigModel 后需订阅付费套餐才能持续使用
+logoUrl: /icons/brands/zhipu.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://zcode.z.ai/en
+  - https://www.zhipuai.cn/zh
+  - https://zcode.z.ai/en/docs/install
+  - https://zcode.z.ai/en/docs/configuration
+verifiedAt: 2026-10-11

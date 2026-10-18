@@ -1,0 +1,36 @@
+# 工具 · WorkBuddy（tencent）
+# 初稿「对应会员」一栏（只作文档参考，不进库）：
+#   WorkBuddy 标准 / 高级 / 旗舰（与 CodeBuddy 共用积分）；GLM Coding Plan
+# T101（2026-10-12）：按飞书快照 2026-10-11 重研结果更新 —— 形态、一句话介绍、免费档、
+#   国内可用性口径与来源；openSource、官网、图标不动。
+name: WorkBuddy
+vendor: tencent
+category: agent
+form: 桌面应用 + 移动 App
+tagline: 用自然语言安排多步骤任务，自动处理本地文件并交付文档、表格、PPT 等成果。
+intro: WorkBuddy 是腾讯的办公智能体，桌面端可处理文件、分析数据、编写代码并调用技能，独立移动 App 可在同账号下远程续聊和管理电脑任务。它自带套餐分标准版、高级版、旗舰版三档，按每月积分计量，积分与 CodeBuddy 同账号共享；也可在本地配置第三方模型的地址与密钥。
+website: https://www.workbuddy.cn
+openSource: false
+accessCN: true
+accessNote: 国内可用
+freeTier: 有免费体验版，登录即可使用；更多额度需开通付费会员
+logoUrl: /icons/brands/codebuddy.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://www.workbuddy.cn/docs/workbuddy/Overview
+  - https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide
+  - https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Mac-Guide
+  - https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-UOS-Guide
+  - https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model
+  - https://www.workbuddy.cn/docs/workbuddy/Pricing
+  - https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Kylin-Guide
+  - https://www.workbuddy.cn
+  - https://www.workbuddy.cn/docs/workbuddy/FirstTask
+  - https://www.workbuddy.cn/docs/workbuddyapp/features/Multidevice
+verifiedAt: 2026-10-11
+# T89：开始条件按 T89 事实卡转写（只用 primary 版本）
+signup: 用腾讯统一身份账号注册（手机号、邮箱或用户名）
+overseasPhone: unspecified
+regionNote: 有国内版，域名为 workbuddy.cn
+startFactsSourceUrl: https://privacy.qq.com/document/preview/771d9a58551449e9a7e7445ebfe04966
+startFactsVerifiedAt: 2026-10-10

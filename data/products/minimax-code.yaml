@@ -1,0 +1,28 @@
+# 工具 · MiniMax Code（minimax）
+# T101（2026-10-12）新增：按飞书快照 2026-10-11 本条为「新增」。
+# 形态只写官方取得的 CLI 与桌面应用两态；CLI 源码（TUI / headless / ACP）在 GitHub 上，
+# 桌面应用不开源，openSource 按「有开源源码」记 true，见交付报告的说明。
+# T113（2026-10-13）：用户批注「只有 CLI 开源」——form 里把 CLI 标成开源、桌面应用不标，
+#   repoUrl 指向 CLI 仓库（github.com/MiniMax-AI/minimax-code）。
+name: MiniMax Code
+vendor: minimax
+category: coding
+form: CLI（开源，MIT）+ 桌面应用
+tagline: MiniMax 编程智能体，可理解项目、修改代码、运行命令和测试。
+intro: MiniMax Code 是 MiniMax 的 AI 编程产品，含桌面工作区和开源终端助手，可理解仓库、修改代码、执行测试。它可使用自家的 M3 等模型，其中 MiniMax M3.1 Flash Preview 只在 MiniMax Code 里可用；CLI 支持无界面执行和编辑器接入。
+website: https://agent.minimax.io/tools
+repoUrl: https://github.com/MiniMax-AI/minimax-code
+openSource: true
+accessCN: true
+accessNote: 国内可用
+freeTier: CLI 源码采用 MIT 许可；MiniMax M Plan 有免费档，登录即可使用，调用模型需要账号额度或兼容 API
+logoUrl: /icons/brands/minimax.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://github.com/MiniMax-AI/minimax-code/blob/main/README.md
+  - https://agent.minimax.io/tools/ai-game-builder
+  - https://agent.minimax.io/tools
+  - https://agent.minimax.io/docs/cli/quick-start
+  - https://www.minimax.cn/m-plan
+  - https://github.com/MiniMax-AI/minimax-code
+verifiedAt: 2026-10-11

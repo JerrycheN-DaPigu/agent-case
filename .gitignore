@@ -1,0 +1,19 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# Next.js 构建产物
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# 本地环境变量（本 case 不需要，留个位置防止误提交）
+.env
+.env.local
+
+# 编辑器与系统
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,329 @@
+/**
+ * 设计令牌 —— 天工开物 全站唯一允许出现「字面色值」的地方。
+ *
+ * 数值以定稿 demo（`prototype/demo/index.html` 的 `:root`）为准，见
+ * `docs/交接/前端设计方案-定稿.md` §3。规则（AGENTS.md §2、docs/02-技术架构.md §8）：
+ * - 组件样式只能引用本文件的变量，不得写死颜色、阴影、圆角；
+ * - 三套皮肤挂在 `html[data-skin]`：夜墨（默认，无属性）/ `paper` 石墨白 / `slate` 冷灰蓝，
+ *   不得使用 `data-theme`；
+ * - 两种强调色挂在 `html[data-accent]`：朱砂（默认，无属性）/ `indigo` 靛蓝；
+ * - **强调色只用在四处**：站标印章、7 天内截止徽标、主按钮、榜单里「最划算」那一根。
+ *   其他地方一律用墨 / 纸 / 线（--fg / --bg / --line / --mute）。
+ * - 形态：直角、无阴影、1px 线分隔，所以 --r-* 全是 0、--sh* 是 none。
+ */
+
+/* ==========================================================================
+   1. 与皮肤无关：字体、版心、间距、字号、动效、层级
+   ========================================================================== */
+:root {
+  /* 字体：英文大标题 Cormorant Garamond、中文标题 Noto Serif SC 900（自托管，见 fonts.css）；
+     正文用系统黑体、数据用系统等宽，都不下载字体文件。 */
+  --f-display: 'Cormorant Garamond', 'Noto Serif SC', Georgia, serif;
+  --f-cjk: 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  --f-body: system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --f-mono: ui-monospace, 'SFMono-Regular', 'Cascadia Mono', Consolas, 'Liberation Mono', monospace;
+
+  /* 版心：内页内容最宽 1440，两侧留白随视口伸缩 */
+  --wrap: 1440px;
+  --wrap-pad: clamp(16px, 3.4vw, 48px);
+
+  /* 间距 */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+  --sp-9: 96px;
+  --sp-10: 140px;
+
+  /* 圆角：全站直角 */
+  --r-xs: 0;
+  --r-sm: 0;
+  --r-md: 0;
+  --r-lg: 0;
+  --r-xl: 0;
+  --r-pill: 0;
+
+  /* 字号 */
+  --fs-xs: 11px;
+  --fs-sm: 12px;
+  --fs-sm2: 13px;
+  --fs-base: 14px;
+  --fs-md: 15px;
+  --fs-lg: 18px;
+  --fs-xl: 22px;
+  --fs-2xl: 26px;
+  --fs-3xl: 30px;
+  --fs-4xl: 52px;
+
+  /* 行高 */
+  --lh-tight: 1.15;
+  --lh-snug: 1.35;
+  --lh-body: 1.6;
+
+  /* 动效 */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-curtain: cubic-bezier(0.7, 0, 0.2, 1);
+  --dur-fast: 0.2s;
+  --dur-base: 0.25s;
+  --dur-slow: 0.55s;
+  --dur-enter: 0.8s;
+  --dur-curtain: 0.42s;
+
+  /* 层级 */
+  --z-nav: 50;
+  --z-menu: 160;
+  --z-curtain: 200;
+
+  /* 转场幕布：五条深色幕布之间的分隔细线。三套皮肤的页脚底色（--footbg）都是深色，
+     幕布用的就是它，所以一条白线在三套皮肤下通用。 */
+  --curtain-line: rgba(255, 255, 255, 0.06);
+
+  /* 页脚底部的分隔线：同上，页脚底色在三套皮肤下都是深色 */
+  --foot-line: rgba(255, 255, 255, 0.1);
+
+  /* 切换器上的色点：代表皮肤 / 强调色本身，与当前皮肤无关，所以值固定 */
+  --skin-dot-night: #0e0f11;
+  --skin-dot-paper: #f5f5f3;
+  --skin-dot-slate: #eef1f5;
+  --skin-dot-vermilion: #e5412d;
+  --skin-dot-indigo: #6ea6e0;
+
+  /* 强调色底上的文字色（印章、主按钮、7 天内截止徽标都用它） */
+  --on: #fff;
+
+  /* 阴影：本设计不用阴影，留着这两个名字是为了旧组件的写法不改也能编译 */
+  --sh: none;
+  --sh-h: none;
+}
+
+/* ==========================================================================
+   2. 夜墨（默认皮肤）：黑纸白墨
+   ========================================================================== */
+:root {
+  --bg: #0e0f11;
+  --fg: #ecebe6;
+  --line: #2b2d31;
+  --mute: #8d9096;
+  --tint: #1a1c20;
+  --tint2: #17191c;
+  --open: #7c8088;
+  --accent: #e5412d;
+  --inv-bg: #ecebe6;
+  --inv-fg: #0e0f11;
+  --inv-mute: #6b6e74;
+  --barinv: #cfcfca;
+  --footbg: #08090a;
+  --footfg: #8d9096;
+  --soft: #202226;
+  --glass: rgba(18, 19, 22, 0.58);
+  --glass-line: rgba(255, 255, 255, 0.16);
+  --hero-fg: #f4f4f0;
+  color-scheme: dark;
+}
+
+/* ==========================================================================
+   3. 石墨白：暖白纸
+   ========================================================================== */
+html[data-skin='paper'] {
+  --bg: #f5f5f3;
+  --fg: #111214;
+  --line: #ddddd8;
+  --mute: #6a6c70;
+  --tint: #e9e9e5;
+  --tint2: #eeeeea;
+  --open: #9a9ca0;
+  --accent: #c8321e;
+  --inv-bg: #111214;
+  --inv-fg: #f5f5f3;
+  --inv-mute: #a4a6aa;
+  --barinv: #44464a;
+  --footbg: #111214;
+  --footfg: #a0a2a6;
+  --soft: #e6e6e2;
+  --glass: rgba(255, 255, 255, 0.6);
+  --glass-line: rgba(17, 18, 20, 0.14);
+  --hero-fg: #f4f4f0;
+  color-scheme: light;
+}
+
+/* ==========================================================================
+   4. 冷灰蓝：冷白纸
+   ========================================================================== */
+html[data-skin='slate'] {
+  --bg: #eef1f5;
+  --fg: #0f1b2a;
+  --line: #d3dae3;
+  --mute: #5e6c7e;
+  --tint: #e0e6ee;
+  --tint2: #e6ebf2;
+  --open: #8c9aae;
+  --accent: #c8321e;
+  --inv-bg: #0f1b2a;
+  --inv-fg: #eef1f5;
+  --inv-mute: #9aa8ba;
+  --barinv: #3b4a5e;
+  --footbg: #0f1b2a;
+  --footfg: #9aa8ba;
+  --soft: #dde3eb;
+  --glass: rgba(255, 255, 255, 0.6);
+  --glass-line: rgba(15, 27, 42, 0.14);
+  --hero-fg: #f4f4f0;
+  color-scheme: light;
+}
+
+/* ==========================================================================
+   5. 强调色：朱砂（默认，无属性）/ 靛蓝（深色皮肤用浅靛蓝，浅色皮肤用深靛蓝）
+   ========================================================================== */
+html[data-accent='indigo'] {
+  --accent: #6ea6e0;
+}
+
+html[data-skin='paper'][data-accent='indigo'],
+html[data-skin='slate'][data-accent='indigo'] {
+  --accent: #1f4e79;
+}
+
+/* ==========================================================================
+   6. 过渡别名：旧组件与未重做页面用的名字。**F7 删掉旧组件时整节一起删。**
+
+   重写 tokens.css 时有 70 个旧变量消失，其中 48 个仍被现有 CSS 引用（用
+   `node scripts/check-token-alias.mjs` 复算）。这里是它们的全部去向：
+   颜色指到新令牌，纯装饰的（玻璃高光、聚光、轨道辉光、多层阴影）一律给 none /
+   transparent —— 新设计本来就直角、无阴影、无渐变；等 F2–F6 把页面重做完，
+   这些引用会自然消失。少数不能给 none 的给成中性值，理由写在行内。
+   ========================================================================== */
+:root {
+  --sans: var(--f-body);
+  --mono: var(--f-mono);
+
+  /* --- 文字与面 --- */
+  --ink: var(--fg);
+  --ink2: var(--fg);
+  --dim: var(--mute);
+  --acc: var(--accent);
+  --acc2: var(--accent);
+  --acc-b: var(--accent);
+  --ok: #4cb782;
+  --base: var(--bg);
+  --elev: var(--bg);
+  --surf: var(--tint);
+  --surf-h: var(--tint2);
+  --line-h: var(--soft);
+  --glow: var(--accent);
+  --card: var(--tint);
+  --row-hover: var(--tint2);
+  --nav-bg: var(--bg);
+  --logo-grad: var(--accent);
+  --logo-sh: none;
+
+  /* --- 表单与焦点环（deals 筛选、订阅框）--- */
+  --field: var(--bg);
+  --field-sh: inset 0 0 0 1px var(--line);
+  --field-sh-focus: inset 0 0 0 1px var(--accent);
+  --focus-ring: var(--accent);
+
+  /* --- 按钮 --- */
+  --btn-bg: var(--tint);
+  --btn-sh: none;
+  --btn-pri-sh: none;
+  --btn-pri-sh-h: none;
+
+  /* --- 药丸与标签 --- */
+  --pill-bg: transparent;
+  --pill-ring: inset 0 0 0 1px var(--line);
+  --pill-glow: none;
+  --tag-bg: transparent;
+  --tag-fg: var(--fg);
+  --tag-ring: none;
+
+  /* --- 空态与封面 --- */
+  --empty-fg: var(--mute);
+  --empty-ring: none;
+  --cover-cap: linear-gradient(transparent, var(--bg));
+  --cover-tag: var(--accent);
+
+  /* --- 柱状图与评分块 --- */
+  --bar-bg: var(--tint);
+  --bar-fg: var(--fg);
+  --bar-inset: none;
+  --bar-top-bg: var(--accent);
+  --bar-top-fg: var(--on);
+  --bar-top-sh: none;
+  --sc-5-bg: var(--fg);
+  --sc-5-fg: var(--bg);
+  --sc-4-bg: var(--tint);
+  --sc-4-fg: var(--fg);
+  --sc-3-bg: var(--tint2);
+  --sc-3-fg: var(--fg);
+  --sc-2-bg: transparent;
+  --sc-2-fg: var(--mute);
+  --sc-1-bg: transparent;
+  --sc-1-fg: var(--mute);
+
+  /* --- 卡片装饰与情报条（新设计不用，给 none）--- */
+  --card-top: none;
+  --card-spot: none;
+  --live-bg: var(--tint);
+  --live-ring: none;
+  --live-dot-sh: none;
+  --blob-3: transparent;
+
+  /* --- 旧标题的「渐变文字」--- */
+  /* background-clip: text + color: transparent 的写法不能给 none —— 那样字就彻底看不见了；
+     给一条纯前景色渐变，字照常显示。 */
+  --title-grad: linear-gradient(var(--fg), var(--fg));
+  --title-grad-soft: linear-gradient(var(--fg), var(--fg));
+  --accent-grad: linear-gradient(var(--accent), var(--accent));
+
+  /* --- 轨道 / 星图（首页 Orbit、模型详情页）---
+     渐变本身给 none；但 --c1…--c4 是渐变的色标、--mask-solid 是 mask 的颜色，
+     不能给 none（会让整条 gradient 失效），给中性色。 */
+  --orbit-halo: none;
+  --orbit-ring: var(--line);
+  --orbit-ring-sh: none;
+  --orbit-sweep: none;
+  --radar: none;
+  --mask-solid: #000;
+  --face: var(--tint);
+  --face-sh: none;
+  --face-sh-hover: none;
+  --core-ring: var(--line);
+  --core-sh: none;
+  --core-sh-pulse: none;
+  --c1: var(--fg);
+  --c2: var(--mute);
+  --c3: var(--line);
+  --c4: var(--mute);
+
+  /* --- 装饰动画的时长：留着旧值，避免 animation 简写整条失效 --- */
+  --dur-float: 10s;
+  --dur-ticker: 3.2s;
+  --dur-shimmer: 6s;
+  --dur-orbit-1: 38s;
+  --dur-orbit-2: 56s;
+  --dur-orbit-3: 80s;
+  --dur-radar: 7s;
+  --dur-pulse: 4s;
+}
+
+/* ==========================================================================
+   7. 内页圆角卡片（2026-10-10 起：比赛 / 福利 / 套餐详情页按 demo 的形态重做）
+
+   上面第 1 节的 `--r-*` 仍是 0（那是「线分隔行」版式的直角），这里另起一套名字，
+   给详情页的圆角卡与药丸用。**只新增、不动旧值**：换掉 --r-* 会一次性改到关于页、
+   错误页等还没重做的页面。等内页都换完再把两套收敛成一套。
+   ========================================================================== */
+:root {
+  /* 卡内小格、按钮 */
+  --r-card-sm: 12px;
+  /* 卡组里的每一张卡 */
+  --r-card: 16px;
+  /* 详情页的主卡（大圆角） */
+  --r-card-lg: 22px;
+  /* 状态徽标、赛道标签这类药丸 */
+  --r-chip: 999px;
+}

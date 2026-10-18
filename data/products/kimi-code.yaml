@@ -1,0 +1,31 @@
+# 工具 · Kimi Code（月之暗面）
+# T105（2026-10-13）新增：Kimi 官网对脚本抓取只返回验证页，字段全部取自统筹在真浏览器
+#   打开的官方页面摘录（D:/qiyuan-research/evidence/kimi-code-20261013/官方页面摘录.md）。
+# 形态只写摘录明确列出的三种（桌面端、CLI、IDE 插件）；摘录没有「开源」或许可证的说法，
+#   也没有因为「通过 npm 分发」推断开源。
+name: Kimi Code
+vendor: moonshot
+category: coding
+form: 桌面端 + CLI + IDE 插件
+tagline: 搭载 Kimi K3 的 AI 编程 Agent 与 CLI 工具。
+intro: Kimi Code 是月之暗面推出的本地 AI 编程助手，提供独立桌面端、命令行和 VS Code 插件，可理解仓库、修改代码、运行测试及检索网页。它可使用月之暗面的 Kimi K3 等模型并消耗会员额度，CLI 还可配置外部模型提供商。
+website: https://www.kimi.com/code
+# openSource 是集合必填（schema 里没有 .optional()），漏写会直接报错；
+# 摘录里没有「开源」或许可证的说法，所以按「不是开源」写，不做推断。
+openSource: false
+accessCN: true
+accessNote: 国内可用
+freeTier: 没有免费档：未订阅 Kimi 会员不能用官方模型，可自己接入第三方模型供应商的 Key
+# 图标：Kimi 与厂商月之暗面共用 lobe-icons 的同一张单色小图标（T58 口径）。
+logoUrl: /icons/brands/kimi.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://www.kimi.com/code
+  - https://www.kimi.com/code/docs/
+  - https://www.kimi.com/code/docs/kimi-code/membership.html
+  - https://www.kimi.com/code/docs/kimi-code-desktop/getting-started.html
+  - https://www.kimi.com/code/docs/kimi-code-cli/guides/getting-started.html
+  - https://www.kimi.com/code/docs/kimi-code-for-vscode/getting-started.html
+  - https://www.kimi.com/code/docs/en/kimi-code/models.html
+  - https://www.kimi.com/code/docs/en/kimi-code-cli/configuration/providers.html
+verifiedAt: 2026-10-13

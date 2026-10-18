@@ -1,0 +1,26 @@
+# 工具 · MiMo Code（xiaomi）
+# T101（2026-10-12）新增：按飞书快照 2026-10-11 本条为「新增」。
+# 官网入口把快照里的 `?lang=en` 去掉，用同一页面的中文默认版；形态只写官方明确取得的 CLI。
+name: MiMo Code
+vendor: xiaomi
+category: coding
+form: CLI
+tagline: 小米终端 AI 编程助手，可读写代码、运行命令、管理 Git，并持续保存项目记忆。
+intro: MiMo Code 是小米推出的终端 AI 编程助手，可读取项目、编写代码、调用工具，并通过记忆整理与上下文压缩支持长时间协作。它可使用小米的旗舰模型 MiMo-V2.6-Pro 等，也支持外部模型提供商；官网提供 Windows、macOS 和 Linux 安装入口。
+website: https://mimo.xiaomi.com/coder
+repoUrl: https://github.com/XiaomiMiMo/MiMo-Code
+openSource: true
+accessCN: true
+accessNote: 国内可用
+freeTier: 有免费版：官网可免登录体验部分模型，源码采用 MIT 许可；更多用量需自备 Key 或订阅
+logoUrl: /icons/brands/xiaomimimo.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://mimo.xiaomi.com/coder?lang=en
+  - https://mimo.mi.com/docs/zh-CN/tokenplan/integration/mimo-code
+  - https://github.com/XiaomiMiMo/MiMo-Code
+  - https://mimo.xiaomi.com/mimocode/models-provider
+  - https://mimo.xiaomi.com/mimocode/start
+  - https://mimo.xiaomi.com/coder
+  - https://mimo.xiaomi.com/zh/mimocode/models-provider
+verifiedAt: 2026-10-11

@@ -1,0 +1,47 @@
+# 工具 · 即梦AI（bytedance）
+# 初稿「对应会员」一栏（只作文档参考，不进库）：
+#   即梦会员（暂不整理）
+# T57：免费档与会员价按官方首页定价区 jimeng.jianying.com 填（取数 2026-10-08，
+#   产品窗口 2026-10-08 核对）。两条口径：
+#   1. 即梦**没有免费会员档**：免费额度以积分形式给（注册最高 110 积分、每日登录再送），
+#      每日数值与有效期官方都没写 —— 是「官方未公布」，不写「待核实」；
+#   2. 会员**只用基础、标准两档**（产品窗口建议）：高级会员的积分可选 6.2K / 12.3K / 18.5K /
+#      27.7K，价格随选项变化，调研里两处价格前后矛盾，不入库；超级会员同理先不收。
+# T101（2026-10-12）：按飞书快照 2026-10-11 重研结果更新 —— 名称、形态、一句话介绍、
+#   国内可用性口径与来源。2026-10-11 重研时官网套餐区一直「正在加载套餐」，
+#   免费档与付费档都没取到新证据，freeTier / priceNote 保留原值（见欠缺清单）。
+# T113（2026-10-13）：用户口径 —— 免费状态的额度（每日送积分、注册赠积分）一律不写，
+#   freeTier 只留一句定性说明；上面 T57 记的赠积分活动已从 freeTier 撤下（见交付报告）。
+name: 即梦AI
+vendor: bytedance
+category: image-video
+form: 网页 + 移动 App
+tagline: 用文字或图片生成视频、绘画，并在智能画布中局部重绘、扩图和组合素材。
+intro: 即梦AI是字节跳动旗下的图像与视频创作工具，提供网页和独立 iPhone App，可用中文提示词生成素材，并通过智能画布完成局部重绘、扩图和多图融合。它使用字节自家的 Seedream 5.0 Pro 生图与 Seedance 2.5 生视频模型；会员与积分决定生成通道和模型权益。
+# 图标：T58 起用 lobe-icons 的单色小图标（用户 2026-10-08 看过各品牌官方规则后决定
+#   先上线使用、合规风险自担），不再逐家取官方素材；T57 记的条款依据留在
+#   本机 docs/交接/logo-图标方案.md 与 T57 的审核意见里。
+website: https://jimeng.jianying.com
+openSource: false
+accessCN: true
+accessNote: 国内可用
+freeTier: 有免费版，登录即可使用；会员功能需订阅即梦会员
+priceNote: 基础会员连续包月 ¥69/月（725 积分/月）；标准会员连续包月 ¥199/月（2,210 积分/月）
+logoUrl: /icons/brands/jimeng.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://lf9-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/vco/17620dba-f821-4a18-85f9-b8b11f73304a.html
+  - https://jimeng.jianying.com
+  - https://lf9-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/vco/jimeng_model_register_information.html
+  - https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/vco/fadfa00e-21c4-41ac-a1ac-c694e7ccedca.html
+  - https://jimeng.jianying.com/ai-tool/image/generate?need_login=true
+  - https://jimeng.jianying.com/ai-tool/home
+  - https://jimeng.jianying.com/tools/seedance-2-5
+verifiedAt: 2026-10-11
+# T89：开始条件按 T89 事实卡转写（只用 primary=cn 版本）
+signup: 剪映账号或抖音账号注册，需绑定手机号
+overseasPhone: unspecified
+realName: yes
+regionNote: 国内版为即梦AI（jimeng.jianying.com）
+startFactsSourceUrl: https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/vco/fadfa00e-21c4-41ac-a1ac-c694e7ccedca.html
+startFactsVerifiedAt: 2026-10-10

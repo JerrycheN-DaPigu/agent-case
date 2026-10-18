@@ -1,0 +1,45 @@
+# 工具 · Qoder（alibaba）
+# T101（2026-10-12）新增：按飞书快照 2026-10-11 本条为「新增」。
+# 分国内版 Qoder CN（qoder.cn，主体通义云启（杭州）信息技术有限公司）与国际版
+# Qoder（qoder.com，主体 BRIGHT ZENITH PRIVATE LIMITED），两版账号与数据不互通，
+# 差别写在 accessNote 里；厂商记 alibaba，图标用厂商的 qwen.svg（lobe-icons 里另有
+# qoder.svg，本轮按「只用仓库里已有的图标」不新增文件，见欠缺清单）。
+# T112（2026-10-13）：补 editions 两版；免费档按 2026-10-13 口径只写定性说明，
+#   14 天 Pro 试用属于赠送活动，不写进 freeTier。
+name: Qoder
+vendor: alibaba
+category: coding
+form: 桌面应用 + 独立 IDE + CLI + JetBrains 插件 + 移动 App + 网页
+tagline: AI 编程平台，提供桌面工作台、IDE、CLI 和 JetBrains 插件，可理解代码库并执行开发任务。
+intro: Qoder 是阿里的智能体开发工具，提供独立桌面、IDE、终端和编辑器集成，并支持手机与网页远程跟进任务。它自带套餐分国内版与国际版，各按每月 Credits 计量，个人档与企业档在 Credits 数量上拉开距离；额度用尽会自动切换到基础模型。
+website: https://qoder.com
+openSource: false
+accessCN: true
+accessNote: 国内可用；国际版 Qoder（qoder.com，主体 BRIGHT ZENITH PRIVATE LIMITED）与中国版 Qoder CN（qoder.cn，主体通义云启（杭州）信息技术有限公司）账号与数据不互通
+freeTier: 有免费版，可免费登录使用
+# 快照【官网与下载入口】：官网 https://qoder.com/en ，中国版官网 https://qoder.cn/
+# 快照里没有「国际版需要代理」的依据，accessLabel 只写账号不互通
+editions:
+  - edition: cn
+    label: 国内版
+    website: https://qoder.cn
+    accessLabel: 国内可用
+    freeTier: 有免费版，可免费登录使用
+  - edition: global
+    label: 国际版
+    website: https://qoder.com
+    accessLabel: 账号与国内版不互通
+    freeTier: 有免费版，可免费登录使用
+logoUrl: /icons/brands/qwen.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://qoder.com/en
+  - https://docs.qoder.com/product-series/quick-start
+  - https://qoder.cn
+  - https://qoder.com/download
+  - https://docs.qoder.com/qoder/model-selector
+  - https://docs.qoder.com/cli/custom-models
+  - https://docs.qoder.cn/product-overview/account-and-subscription
+  - https://docs.qoder.com/account/pricing
+  - https://docs.qoder.com/mobile/app/remote-control
+verifiedAt: 2026-10-11

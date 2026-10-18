@@ -1,0 +1,45 @@
+# Codex · T41 官方复核；未确认字段见调研报告
+# T53：一句话简介的依据是 **Codex 官方产品页**（developers.openai.com/codex），
+#   不采用 OpenAI 那张一般性的「智能体」页（openai.com/solutions/use-case/agents/）。
+# T101（2026-10-12）：按飞书快照 2026-10-11 重研结果更新 —— 形态、一句话介绍、免费档、
+#   国内可用性口径与来源。官网仍留 developers.openai.com/codex：快照没有给新的产品首页，
+#   只给了 learn.chatgpt.com 的文档入口，见交付报告的「待决策」。
+# T113（2026-10-13）：用户批注 —— 官网改用 ChatGPT 下载页，原来的 developers.openai.com/codex
+#   改由 sourceUrls 保留（T101 的待决策到此为止）。
+name: Codex
+vendor: openai
+category: coding
+form: 桌面应用 + CLI + VS Code 插件 + JetBrains 插件 + 网页 + 移动 App
+tagline: OpenAI 的编程智能体，可在代码库中检查和修改文件、运行命令，并协助审查和完成开发任务。
+intro: Codex 是 OpenAI 的编程智能体，可在桌面、终端、编辑器和云端处理代码修改、测试与审查，也能通过 ChatGPT 手机端跟进任务。它可使用 OpenAI 最新的旗舰模型 GPT-6 Astra 等；中国大陆不在 ChatGPT 官方支持地区，本次未做直连或付款实测。
+website: https://chatgpt.com/zh-Hans-CN/download/
+repoUrl: https://github.com/openai/codex
+openSource: true
+accessCN: false
+accessNote: 官方国内不可用 · 有接法
+freeTier: ChatGPT Free 提供桌面版 GPT-6 Luna 的标准速度体验，按 rollout 开放；官方只列了桌面版这一条，未列出 CLI、IDE 与云端功能
+logoUrl: /icons/brands/codex.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://learn.chatgpt.com/docs/cli.md
+  - https://learn.chatgpt.com/docs/auth.md
+  - https://learn.chatgpt.com/docs/amazon-bedrock.md
+  - https://learn.chatgpt.com/docs/app.md
+  - https://learn.chatgpt.com/docs/codex/ide.md
+  - https://learn.chatgpt.com/docs/quickstart.md
+  - https://learn.chatgpt.com/docs/pricing.md
+  - https://learn.chatgpt.com/docs/models.md
+  - https://learn.chatgpt.com/docs/config-file/config-advanced.md
+  - https://developers.openai.com/codex
+  - https://chatgpt.com/pricing
+  - https://help.openai.com/en/articles/7947663-chatgpt-supported-countries
+  - https://learn.chatgpt.com/docs/models
+  - https://learn.chatgpt.com/docs/codex/ide
+  - https://learn.chatgpt.com/docs/mobile
+verifiedAt: 2026-10-11
+# T89：开始条件按 T89 事实卡转写（只用 primary 版本）
+signup: 注册或登录时可能需手机号验证
+overseasPhone: yes
+regionNote: 中国大陆不在官方支持地区名单内
+startFactsSourceUrl: https://help.openai.com/en/articles/8983040-what-does-phone-verification-look-like
+startFactsVerifiedAt: 2026-10-10

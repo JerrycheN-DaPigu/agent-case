@@ -1,0 +1,26 @@
+# 工具 · 小云雀（bytedance）
+# T101（2026-10-12）新增：按飞书快照 2026-10-11 本条为「新增」。
+# 厂商归字节跳动（官方页写「字节跳动旗下创意 Agent 平台」，运营主体为深圳市脸萌科技有限公司）；
+# 图标用厂商的 doubao.svg（lobe-icons 里没有小云雀自己的标）。
+name: 小云雀
+vendor: bytedance
+category: image-video
+form: 网页 + 移动 App
+tagline: 面向视频、图片与短剧创作的内容创作 Agent，提供短剧、营销和通用创作工作流。
+intro: 小云雀是字节跳动的 AI 内容创作工具，网页和独立手机 App 提供视频生成及短剧 Agent，可从剧本组织角色、分镜与成片，并支持参考生成、续写和视频编辑。它使用字节自家的 Seedance 2.5 视频生成模型；登录后使用积分及会员权益，网页与 App 均可选择。
+website: https://xyq.jianying.com
+openSource: false
+accessCN: true
+accessNote: 国内可用
+freeTier: 有免费版，登录即可使用；会员功能需订阅小云雀会员
+logoUrl: /icons/brands/doubao.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://xyq.jianying.com
+  - https://xyq.jianying.com/pricing
+  - https://xyq.jianying.com/model-ecosystem
+  - https://xyq.jianying.com/login?enter_method=header_login&enter_from=landing_page_v3e_v3
+  - https://xyq.jianying.com/tutorials
+  - https://xyq.jianying.com/tutorials/seedance-2-0
+  - https://xyq.jianying.com/tutorials/seedance-2-5
+verifiedAt: 2026-10-11

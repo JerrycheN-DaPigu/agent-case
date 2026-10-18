@@ -1,0 +1,34 @@
+# 工具 · Pi（earendil）
+# 初稿「对应会员」一栏（只作文档参考，不进库）：
+#   无官方会员
+# T101（2026-10-12）：按飞书快照 2026-10-11 重研结果更新 —— 名称、形态、一句话介绍、
+#   免费档、国内可用性口径与来源；openSource、官网、图标不动。
+name: Pi
+vendor: earendil
+category: coding
+form: CLI
+tagline: 可通过扩展定制的终端智能体，能够读写项目文件、执行命令并处理多步任务。
+intro: Pi 是由 Mario Zechner 创立、现由 Earendil 维护的开源终端编码智能体，提供交互、JSON、RPC 和 SDK 模式，支持会话分支与历史导出。它没有自带套餐，通过 API 密钥或 OAuth 连接多家模型服务，也可用扩展、技能和提示模板定制工作流。
+website: https://pi.dev
+repoUrl: https://github.com/earendil-works/pi
+openSource: true
+accessCN: true
+accessNote: 国内可用
+freeTier: 程序采用 MIT 开源许可；使用时仍需供应商订阅、API Key 或本地模型
+logoUrl: /icons/brands/pi.svg
+logoSourceUrl: https://pi.dev/favicon.svg
+sourceUrls:
+  - https://pi.dev
+  - https://pi.dev/docs/latest/models
+  - https://pi.dev/docs/latest
+  - https://pi.dev/docs/latest/quickstart
+  - https://pi.dev/docs/latest/termux
+  - https://pi.dev/docs/latest/providers
+  - https://earendil.com/posts/announcement-reflection/
+  - https://pi.dev/models
+verifiedAt: 2026-10-11
+# T89：开始条件按 T89 事实卡转写（只用 primary 版本）
+# 海外手机号、实名、地区限制三行在卡里都没有可用的官方依据（单一来源 / 官方页没查全），按映射规则留空，见交付报告
+signup: Pi 无独立账号，用上游供应商账号或 API Key
+startFactsSourceUrl: https://pi.dev/docs/latest/providers
+startFactsVerifiedAt: 2026-10-10

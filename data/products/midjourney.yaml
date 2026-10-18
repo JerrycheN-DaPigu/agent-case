@@ -1,0 +1,34 @@
+# 工具 · Midjourney（midjourney）
+# 初稿「对应会员」一栏（只作文档参考，不进库）：
+#   Basic $10 / Standard $30 / Pro $60 / Mega $120（月付；年付 8 折）
+# T101（2026-10-12）：按飞书快照 2026-10-11 重研结果更新 —— 形态、一句话介绍、免费档、
+#   国内可用性口径与来源。accessCN 沿用旧记录（快照已不再采集地区信息），见欠缺清单。
+name: Midjourney
+vendor: midjourney
+category: image-video
+form: 网页
+tagline: 通过文字或参考图生成、编辑图片，并将图片制作成视频。
+intro: Midjourney 是同名公司提供的图像与视频创作服务，可在网页和 Discord 中使用自有模型，通过文字、参考图、风格控制及编辑工具生成视觉素材。注册须使用 Google 或 Discord 账号，创作需有效订阅，档位决定 GPU 资源与视频功能。
+website: https://www.midjourney.com
+openSource: false
+accessCN: false
+accessNote: 官方国内不可用
+freeTier: 无免费版：官网与 Discord 都需订阅后使用
+logoUrl: /icons/brands/midjourney.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://docs.midjourney.com/hc/en-us/articles/33329261836941-Getting-Started-Guide
+  - https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service
+  - https://www.midjourney.com
+  - https://docs.midjourney.com/hc/en-us/articles/33390994570509-Logging-In-Connecting-Accounts
+  - https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version
+  - https://docs.midjourney.com/hc/en-us/articles/27870399340173-Free-Trials
+  - https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans
+  - https://docs.midjourney.com/hc/en-us/articles/27868831972365-Accepted-Payment-Methods
+verifiedAt: 2026-10-11
+# T89：开始条件按 T89 事实卡转写（只用 primary 版本）
+# 海外手机号、实名两行在卡里没有可用的官方依据（官方协议 / 隐私政策没查过），按映射规则留空，见交付报告
+signup: 用 Discord 或 Google 账号注册登录
+regionNote: 官方无中国区版本
+startFactsSourceUrl: https://docs.midjourney.com/hc/en-us/articles/33390994570509-Logging-In-Connecting-Accounts
+startFactsVerifiedAt: 2026-10-10

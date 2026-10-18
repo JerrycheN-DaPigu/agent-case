@@ -1,0 +1,41 @@
+# 工具 · Google Antigravity（google）
+# 初稿「对应会员」一栏（只作文档参考，不进库）：
+#   Google AI Pro / Ultra（更高限额 + AI credits 池）
+# T101（2026-10-12）：按飞书快照 2026-10-11 重研结果更新 —— 形态、一句话介绍、免费档、
+#   国内可用性口径与来源；openSource、官网、图标不动。
+name: Google Antigravity
+vendor: google
+category: coding
+form: 桌面应用 + 独立 IDE + CLI + VS Code 插件 + JetBrains 插件
+tagline: Google 的智能体开发平台，可让 AI 在项目中读写文件、运行命令、操作浏览器，并通过计划和差异审查完成开发任务。
+intro: Antigravity 是 Google 的智能体开发工具，提供桌面、IDE 与命令行工作方式，能结合代码、终端和浏览器推进任务并核验产物。它可使用 Google 最新的旗舰模型 Gemini 4 Argon 等；个人使用受 Google 账号、年龄与地区资格限制，官方批准地区不含中国大陆。
+website: https://antigravity.google
+openSource: false
+accessCN: false
+accessNote: 官方国内不可用
+freeTier: 有免费版，未订阅 Google AI Pro／Ultra 也能登录使用基础功能（含 Gemini 模型、Tab 补全与 CLI）；用量取决于方案和服务容量
+logoUrl: /icons/brands/antigravity.svg
+logoSourceUrl: https://github.com/lobehub/lobe-icons
+sourceUrls:
+  - https://www.antigravity.google
+  - https://www.antigravity.google/docs/ide/overview
+  - https://www.antigravity.google/docs/ide/extensions
+  - https://www.antigravity.google/docs/overview
+  - https://www.antigravity.google/docs/cli/overview
+  - https://www.antigravity.google/docs/cli/install
+  - https://www.antigravity.google/docs/getting-started
+  - https://www.antigravity.google/download
+  - https://www.antigravity.google/docs/models
+  - https://www.antigravity.google/docs/plans
+  - https://www.antigravity.google/docs/sdk/local-models
+  - https://ai.google.dev/gemini-api/docs/billing?hl=en
+  - https://antigravity.google
+  - https://antigravity.google/docs/models
+  - https://antigravity.google/docs/faq
+verifiedAt: 2026-10-11
+# T89：开始条件按 T89 事实卡转写（只用 primary 版本）
+# 海外手机号在卡里是「单一来源」、实名那一行官方没查隐私政策，按映射规则都留空，见交付报告
+signup: 用个人 Google 账号注册登录
+regionNote: 中国大陆不在官方可用国家/地区列表中
+startFactsSourceUrl: https://antigravity.google/docs/faq/
+startFactsVerifiedAt: 2026-10-10

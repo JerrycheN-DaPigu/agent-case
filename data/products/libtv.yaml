@@ -1,0 +1,19 @@
+# 工具 · LibTV（liblib）
+# T101（2026-10-12）新增：按飞书快照 2026-10-11 本条为「新增」。
+# lobe-icons 里没有 LiblibAI / LibTV 的图标，按口径不写 logoUrl，前台退回首字母。
+name: LibTV
+vendor: liblib
+category: image-video
+form: 网页
+tagline: 提供画布和 Agent 的视频创作工具，可生成剧本、图片、视频与音频，并进行智能剪辑。
+intro: LibTV 是 LiblibAI 推出的 AI 视频创作平台，以网页画布连接剧本、角色、分镜、生成与剪辑，也提供 Agent 和技能入口编排复杂创作。它自带创作会员按每月积分分多档，积分到账后 31 天有效；平台内可选择 Seedance 2.5、2.0 等视频模型，移动网页与网页版数据互通。
+website: https://www.liblib.tv
+openSource: false
+accessCN: true
+accessNote: 国内可用
+freeTier: 有免费版，登录即可使用；会员功能需订阅 LibTV 会员
+sourceUrls:
+  - https://www.liblib.tv
+  - https://www.liblib.art/activities/468ad794ccc7408d81757fd91be003ec
+  - https://github.com/libtv-labs/libtv-skills/blob/main/skills/libtv-skill/SKILL.md?plain=1
+verifiedAt: 2026-10-11

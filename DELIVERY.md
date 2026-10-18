@@ -24,6 +24,7 @@ Node 20.9+。本机验证环境：Node v24.16.0、pnpm 10.33.0（通过 corepack
 | 导入脚本 | `scripts/import-guides.mjs` | yaml 解析 + zod 校验；tool 存在性、日期格式、截图文件存在性、slug 重复（忽略大小写）四类全部拦下，一次列全，退出码 1 且不写文件；成功时按 updatedAt 倒序、同日按 slug 升序 |
 | 教程 | `content/guides/*.md` → `data/guides.json` | 5 篇，覆盖 3 个分类 |
 | 样式 | `src/components/guides/guides.module.css` | 只用 tokens.css 变量；无内联样式（not-found 页也一样） |
+| 教程骨架 | `docs/教程骨架.md` + `docs/截图清单-deepseek-harness.md` | 以 DeepSeek Harness 一篇为样板：九节结构、小节拆法、配图命名与来源标注，其余四篇照此填 |
 
 新增文件都在 `src/components/guides/`：`SidebarNav`（折叠 + 移动端抽屉）、`Toc`（滚动高亮）、`Markdown`（标题锚点）、`GuideCard`、`ProductBar`。
 

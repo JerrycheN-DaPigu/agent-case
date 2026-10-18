@@ -33,7 +33,7 @@ Node 20.9+。本机验证环境：Node v24.16.0、pnpm 10.33.0（通过 corepack
 |---|---|---|
 | Cursor | 编程工具 | 站内最常被问「然后呢」的工具；官方文档写得细，适合作为「境外工具 + 国内怎么用」的样本 |
 | TRAE | 编程工具 | 国内手机号就能注册，是新手最可能真的装上的一个 |
-| OpenCode | 编程工具 | 开源、不需要账号，用来讲「接入自己的 API Key」最干净 |
+| DeepSeek Harness | 编程工具 | 本站自己的工作台，插件化 + 权限审批最能体现「智能体」和普通补全的区别 |
 | 即梦AI | 图像与视频 | 网页打开就能用，不用装软件、不用境外支付，出图链路最短 |
 | 可灵AI | 图像与视频 | 补上视频生成，和即梦形成「图 / 视频」两条链 |
 
@@ -47,7 +47,7 @@ Node 20.9+。本机验证环境：Node v24.16.0、pnpm 10.33.0（通过 corepack
 |---|---|---|
 | Cursor | cursor.com/docs、/downloads、/pricing | 官网文档与下载页已核对；菜单路径按文档描述 |
 | TRAE | trae.cn、docs.trae.ai、价格页 | 官网与文档已核对；国内版菜单文案各版本不一致，文中已注明 |
-| OpenCode | opencode.ai/docs、/providers、GitHub 仓库 | 文档已核对；安装命令按官方文档 |
+| DeepSeek Harness | deepseek.com/harness、GitHub README、官方文档站、providers 文档 | 官方 README 的启动命令与 Web UI 指南已逐条核对 |
 | 即梦AI | jimeng.jianying.com 及其工具页 | 入口与登录方式已核对；积分规则以页面为准 |
 | 可灵AI | klingai.com/cn、app.klingai.com | 入口与登录方式已核对；模式与积分以页面为准 |
 
@@ -72,4 +72,4 @@ Node 20.9+。本机验证环境：Node v24.16.0、pnpm 10.33.0（通过 corepack
 | `pnpm import:guides` | 5 篇通过；连跑两次 `data/guides.json` 哈希一致 |
 | 校验拦截 | 演示文件同时带「tool 不存在 + 日期格式错 + 截图不存在」，三条一次列出，退出码 1，json 未改动 |
 | 页面只读生成物 | 页面只读 `data/guides.json`；清空成 `[]` 时总览显示「教程正在整理」 |
-| 教程字数 | 5 篇纯汉字数 1538–1562（不含代码块与表格），落在 1500–3000 区间 |
+| 教程字数 | 5 篇纯汉字数 1538–1737（不含代码块与表格），落在 1500–3000 区间 |

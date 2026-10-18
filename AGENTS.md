@@ -5,7 +5,8 @@
 ## 动手前
 
 - 通读 `docs/任务书.md` 和 `docs/验收清单.md`。
-- 看 `docs/参考/网站现状/`（站内真实页面长什么样）和 `docs/参考/` 里的 priceai 截图（页面结构参照）。
+- **双击 `reference-site/index.html`**，看站内真实页面长什么样（工具列表、工具详情、文章列表）。
+- 看 `docs/参考/` 里的 priceai 截图，那是页面**结构**的参照。
 - 看一眼 `content/README.md`（教程格式 + 导入脚本契约）和 `data/README.md`（工具字段）。
 
 ## 硬规则

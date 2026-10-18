@@ -585,6 +585,8 @@
   margin-top: var(--sp-6);
   font-size: var(--fs-md);
   line-height: 1.85;
+  /* 长 URL 和长路径在窄屏会撑破栏宽，允许在任意位置折行 */
+  overflow-wrap: anywhere;
 }
 
 .markdown h2 {

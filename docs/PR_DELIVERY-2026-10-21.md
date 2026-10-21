@@ -4,7 +4,8 @@
 
 ## 分支与范围
 
-- 仓库：`JerrycheN-DaPigu/agent-case`；工作分支 `intern/chen`；目标分支 `main`。
+- 成果来源：`JerrycheN-DaPigu/agent-case` 的 `intern/chen`；交付目标：`suche9945-dev/agent-case` 的 `main`。
+- 正式交付入口：[上游 PR #3](https://github.com/suche9945-dev/agent-case/pull/3)。该 PR 已关联上述成果分支，沿用已有 PR 更新，避免重复提交；正文按[上游任务说明 PR #1](https://github.com/suche9945-dev/agent-case/pull/1) 中的模板填写。
 - 整理前 HEAD 为 `9b130ec8aa0b69ff5f642908f337ed9adc8bae89`，目标 main 为 `dc4173d`；原有六个开发提交保留，不改写历史。
 - 处理全部相关已修改与未跟踪的代码、教程、工具档案、配图和文档。工程拆为两组，五篇教程各自独立提交，最后提交交付材料。
 - `data/guides.json` 由正式导入产生；每篇提交仅携带该篇对应的生成数据差异。

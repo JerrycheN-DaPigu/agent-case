@@ -80,7 +80,7 @@ export default async function GuidePage({ params }: PageProps) {
 
         {product ? <ProductBar product={product} /> : null}
 
-        <Markdown source={guide.body} />
+        <Markdown source={guide.body} anchors={headings} />
 
         <nav className={styles.pager} aria-label="上一篇 / 下一篇">
           {prev ? (

@@ -553,7 +553,8 @@
 }
 
 .badgeOk,
-.badgeNo {
+.badgeNo,
+.badgeWarn {
   padding: 1px var(--sp-2);
   border: 1px solid var(--line);
   font-size: var(--fs-xs);
@@ -566,6 +567,19 @@
 
 .badgeNo {
   color: var(--mute);
+}
+
+/* 「官方未声明」这类未知状态：用虚线边框，区别于「不可用」 */
+.badgeWarn {
+  border-style: dashed;
+  color: var(--mute);
+}
+
+.productNote {
+  margin-top: var(--sp-2);
+  color: var(--mute);
+  font-size: var(--fs-xs);
+  line-height: var(--lh-snug);
 }
 
 .website {
@@ -673,6 +687,38 @@
   height: auto;
   margin: var(--sp-4) auto;
   border: 1px solid var(--line);
+}
+
+/* 图片 + 可见来源图注。用 span 包住，避免 <figure> 嵌套在 <p> 里产生非法结构 */
+.figure {
+  display: block;
+  margin: var(--sp-5) 0;
+}
+
+.figure img {
+  margin: 0 auto var(--sp-2);
+}
+
+.figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1) var(--sp-3);
+  padding-top: var(--sp-2);
+  border-top: 1px solid var(--line);
+  color: var(--mute);
+  font-size: var(--fs-sm2);
+  line-height: var(--lh-snug);
+}
+
+.figcaptionText {
+  flex: 1 1 16em;
+  min-width: 0;
+}
+
+.figcaptionSource {
+  flex: 0 1 auto;
+  color: var(--open);
+  overflow-wrap: anywhere;
 }
 
 .markdown blockquote {
